@@ -33,7 +33,7 @@ const responseMapConfig = {
       return record.NamespacePrefix ? `${record.NamespacePrefix} ${nameField}` : nameField;
     },
     query:`SELECT DurableId, MasterLabel, DeveloperName, NamespacePrefix FROM EntityDefinition WHERE IsCustomSetting=true`,
-    urlTemplate: (id) => `/page?address=%2Fsetup%2Fui%2FviewCustomSettings.apexp%3FappLayout%3Dsetup%26ltn_app_id%3D06m7Y000000GElTQAW%26setupid%3DCustomSettings%26sfdcIFrameHost%3Dweb%26clc%3D1%26id%3D${id}`
+    urlTemplate: (id) => `/lightning/setup/CustomSettings/page?address=%2Fsetup%2Fui%2FviewCustomSettings.apexp%3FappLayout%3Dsetup%26ltn_app_id%3D06m7Y000000GElTQAW%26setupid%3DCustomSettings%26sfdcIFrameHost%3Dweb%26clc%3D1%26id%3D${id}`
   },
   flows: {
     idField: 'Id',
